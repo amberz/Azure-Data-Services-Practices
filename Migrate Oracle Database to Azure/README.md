@@ -22,5 +22,5 @@ Migrate to Azure SQL Database or Managed Instance
 
 Refer below migration decision tree:
 
-<IMG SRC="https://azurequickstartsservice.blob.core.windows.net/badges/101-analysis-services-create/CredScanResult.svg" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.png" />&nbsp;
 
