@@ -26,6 +26,6 @@ Using cross-cloud connectivity (Interconnect), the applications hosted on Azure 
 
 Refer below migration decision tree:
 
-<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.png" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
 
 
