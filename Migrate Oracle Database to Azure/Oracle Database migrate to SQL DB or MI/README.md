@@ -1,31 +1,29 @@
 # Oracle Database to Azure SQL Database/Managed Instance scenario
 
-This template give you reference for decision tree, migration path from schema conversion, data conversion from Oracle Database.
+## Migration Process
 
-## Migration paths
+The migration will includes existing Oracla Database environment assessment, Oracle schema and objects conversion to SQL, and data migration.
 
-Oracle database would migrate to Azure VM, PostgreSQL, SQL DB/MI, or leverage IntercCross-cloud connectivity( Interconnect) to access OCI.
+Refer below migration process:
 
-### Rehost
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
 
-Migrate Oracle Database to Azure Virtual Machine, for more information about how to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
-
-
-For BCDR requirement, refer [Implement Oracle Data Guard on an Azure Linux virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard), and [Implement Oracle Golden Gate on an Azure Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate) 
+## Assessment
 
 
-### Refactor
 
-Migrate to Azure Database for PostgreSQL, Azure Data Migration Service can provide Oracle schemas and data migration, for more information, [Tutorial: Migrate Oracle to Azure Database for PostgreSQL online using DMS (Preview)](https://docs.microsoft.com/en-us/azure/dms/tutorial-oracle-azure-postgresql-online)
+## Migration principal 
 
-### Rearchitect
+## Schema and objects conversion
+
+## Data migration
 
 Migrate to Azure SQL Database or Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema and objects conversion and data migration to Azure SQL Database/Managed Instance. 
 
 To download the SSMA for Oracle,refer to downlad the latest version [What's New in SSMA for Oracle (OracleToSQL)](https://docs.microsoft.com/en-us/sql/ssma/oracle/what-s-new-in-ssma-for-oracle-oracletosql?view=sql-server-ver15) 
 
 
-### Cross-cloud connectivity
+### Cross-cloud connectivity(Interconnect)
 
 Using cross-cloud connectivity (Interconnect), the applications hosted on Azure can access Oracle database on Oracle Cloud Infrastructure (OCI) with low latency, high throughput by connecting an ExpressRoute circuit in Microsoft Azure with a FastConnect circuit in OCI. 
 
