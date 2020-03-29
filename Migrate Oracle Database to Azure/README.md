@@ -4,7 +4,7 @@ This template give you reference for decision tree, migration path from schema c
 
 ## Migration paths
 
-Oracle database would migrate to Azure VM, PostgreSQL, SQL DB/MI, or leverage IntercCross-cloud connectivity( Interconnect) to access OCI.
+Oracle database would migrate to Azure Virtual Machine, Azure Database for PostgreSQL, Azure SQL Database, Azure Managed Instance, or leverage IntercCross-cloud connectivity( Interconnect) to access OCI.
 
 ### Rehost
 
@@ -20,7 +20,7 @@ Migrate to Azure Database for PostgreSQL, Azure Data Migration Service can provi
 
 ### Rearchitect
 
-Migrate to Azure SQL Database or Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema and objects conversion and data migration to Azure SQL Database/Managed Instance. 
+Migrate to Azure SQL Database or Azure Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema and objects conversion and data migration to Azure SQL Database/Managed Instance. 
 
 To download the SSMA for Oracle,refer to downlad the latest version [What's New in SSMA for Oracle (OracleToSQL)](https://docs.microsoft.com/en-us/sql/ssma/oracle/what-s-new-in-ssma-for-oracle-oracletosql?view=sql-server-ver15) 
 
