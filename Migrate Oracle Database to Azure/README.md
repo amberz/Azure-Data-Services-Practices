@@ -1,4 +1,4 @@
-# Migration practices for Oracle Database to Azure SQL Database/Managed Instance scenario
+# Oracle Database to Azure SQL Database/Managed Instance scenario
 
 This template give you reference for decision tree, migration path from schema conversion, data conversion from Oracle Database.
 
@@ -37,4 +37,5 @@ Refer below migration decision tree:
 
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
 
+Above decision tree comes from Microsoft Cloud Adoption Framework 
 
