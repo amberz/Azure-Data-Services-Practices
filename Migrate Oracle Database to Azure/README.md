@@ -8,18 +8,19 @@ Oracle database would migrate to Azure VM, PostgreSQL, SQL DB/MI, or leverage In
 
 ### Rehost
 
-Host Oracle Database on Azure VM
+Migrate Oracle Database to Azure Virtual Machine, for more information about how to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
 
-For more information about how to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
+
+For BCDR requirement, refer [Implement Oracle Data Guard on an Azure Linux virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard), and [Implement Oracle Golden Gate on an Azure Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate) 
 
 
 ### Refactor
 
-Migrate to Azure Database for PostgreSQL
+Migrate to Azure Database for PostgreSQL, Azure Data Migration Service can provide Oracle schemas and data migration, for more information, [Tutorial: Migrate Oracle to Azure Database for PostgreSQL online using DMS (Preview)](https://docs.microsoft.com/en-us/azure/dms/tutorial-oracle-azure-postgresql-online)
 
 ### Rearchitect
 
-Migrate to Azure SQL Database or Managed Instance
+Migrate to Azure SQL Database or Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema conversion and data migration to Azure SQL Database/Managed Instance. 
 
 ### Cross-cloud connectivity(Interconnect)
 
