@@ -29,3 +29,13 @@ For more information, see [Schema conversion](https://docs.microsoft.com/en-us/s
 ## Oracle Objects conversion and Data migration
 After installed SSMA, create report to convert Oracle Schema and migrate data to SQL Database or Managed Instance
 For step-by-step guide, see [SSMA Migration guide](https://docs.microsoft.com/en-us/sql/ssma/oracle/sql-server-linux-convert-from-oracle?view=sql-server-ver15)
+
+
+
+## Post tasks after migration
+
+After the whole migration, you can uninstall the client components to remove ssma_oracle schema. 
+
+Note, you should not uninstall the extension pack from SQL Server unless your migrated databases no longer use functions in the ssma_oracle schema of the sysdb database.
+
+For more information, see [Removing SSMA for Oracle Components](https://docs.microsoft.com/en-us/sql/ssma/oracle/removing-ssma-for-oracle-components-oracletosql?view=sql-server-ver15)
