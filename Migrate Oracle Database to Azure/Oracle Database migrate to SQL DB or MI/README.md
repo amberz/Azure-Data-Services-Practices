@@ -20,13 +20,12 @@ For more information, see [Assessment guidance](https://github.com/microsoft/Dat
 
 
 ## Objects Conversion Principles
-Below table describe how Oracle objects will convert to SQL objects. 
+Below table describes how SSMA tool convert Oracle objects to SQL objects. 
 https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/SchemaConversionPrinciples.pdf
 
 For more information, see [Schema conversion](https://docs.microsoft.com/en-us/sql/ssma/mysql/converting-mysql-databases-mysqltosql?view=sql-server-ver15)
 
 
-## Schema and objects conversion
-
-
-## Data migration
+## Oracle Objects conversion and Data migration
+After installed SSMA, create report to convert Oracle Schema and migrate data to SQL Database or Managed Instance
+For step-by-step guide, see [SSMA Migration guide](https://docs.microsoft.com/en-us/sql/ssma/oracle/sql-server-linux-convert-from-oracle?view=sql-server-ver15)
