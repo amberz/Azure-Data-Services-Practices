@@ -44,7 +44,7 @@ For more information about how to configure cross-cloud connectivity from Azure 
 
 Refer below migration decision tree:
 
-<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
 
 Above decision tree is referred from Microsoft Cloud Adoption Framework 
 

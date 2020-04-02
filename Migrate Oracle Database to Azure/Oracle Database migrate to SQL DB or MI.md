@@ -3,7 +3,7 @@
 ## Migration Process
 
 The migration guide will includes existing Oracla Database environment assessment, Oracle schema and objects conversion to SQL, and data migration. For whole migraiton process, refer below migration process:
-<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OratoSQLMigrationProcess.png" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/OratoSQLMigrationProcess.png" />&nbsp;
 
 
 ## Migration tools
@@ -29,7 +29,8 @@ For how to run the both tools, see [Assessment guide](https://github.com/microso
 
 ## Objects Conversion Principles
 Below table describes how SSMA tool convert Oracle objects to SQL objects. 
-<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/SchemaConversionPrinciples.jpg" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/SchemaConversionPrinciples1.png" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/SchemaConversionPrinciples2.png" />&nbsp;
 
 For more information, see [Schema conversion](https://docs.microsoft.com/en-us/sql/ssma/mysql/converting-mysql-databases-mysqltosql?view=sql-server-ver15)
 
