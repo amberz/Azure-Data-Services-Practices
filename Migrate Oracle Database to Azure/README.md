@@ -1,6 +1,6 @@
 # Oracle Database migrate to Azure
 
-This template give you reference for decision tree, migration path from schema conversion, data conversion from Oracle Database.
+This guidace give you reference for decision tree of Oracle database migration, migration path to virtual machine, or Azure managed database, such as: PostgreSQL, SQL Database, Managed Instance etc.
 
 ## Migration paths
 
