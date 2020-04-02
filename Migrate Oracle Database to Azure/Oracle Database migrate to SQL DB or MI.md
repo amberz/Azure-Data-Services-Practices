@@ -2,10 +2,9 @@
 
 ## Migration Process
 
-The migration guide will includes existing Oracla Database environment assessment, Oracle schema and objects conversion to SQL, and data migration.
-
-Refer below migration process:
+The migration guide will includes existing Oracla Database environment assessment, Oracle schema and objects conversion to SQL, and data migration. For whole migraiton process, refer below migration process:
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OratoSQLMigrationProcess.png" />&nbsp;
+
 
 ##Migration tools
 Assment script:
