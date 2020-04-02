@@ -8,7 +8,10 @@ Oracle database would migrate to Azure Virtual Machine, Azure Database for Postg
 
 ### Rehost
 
-Migrate Oracle Database to Azure Virtual Machine, for more information about how to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
+Oracle Database can migrate to Azure Virtual Machine, and also provide business continuity and disaster recovery capacity. 
+
+Blow is step by step guide to install Oracle DB to Azure Virtual Machine:
+How to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
 
 
 For BCDR requirement, refer [Implement Oracle Data Guard on an Azure Linux virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard), and [Implement Oracle Golden Gate on an Azure Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate) 
