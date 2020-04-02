@@ -30,7 +30,7 @@ For step-by-step migration, refer [Tutorial: Migrate Oracle to Azure Database fo
 
 Azure SQL Database/Managed Instance provide powerful BCDR, security and stability. To migrate to Azure SQL Database or Azure Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema and objects conversion and data migration to Azure SQL Database/Managed Instance. 
 
-To download the SSMA for Oracle,refer to downlad the latest version [What's New in SSMA for Oracle (OracleToSQL)](https://docs.microsoft.com/en-us/sql/ssma/oracle/what-s-new-in-ssma-for-oracle-oracletosql?view=sql-server-ver15) 
+To download the SSMA for Oracle,refer to downlad the latest version [Microsoft SQL Server Migration Assistant for Oracle](https://aka.ms/ssmafororacle)
 
 For whole project migration, refer [Oracle Database migrate to Azure SQL Database/Managed Instance](https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Oracle%20Database%20migrate%20to%20SQL%20DB%20or%20MI.md)
 
