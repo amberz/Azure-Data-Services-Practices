@@ -17,7 +17,7 @@ Oracle schema and data migration:
 
 ## Assessment
 
-Oracle_PreSSMA Script( provided by Data Migration Jumpstart Team) can run on Oracle Database to evalute how many tables, stored procedures, views, packages etc, it will give a assessment if the existing Oracle Database is very complex. 
+Oracle_PreSSMA Script( provided by Data Migration Jumpstart Team) can run on Oracle Database to evalute how many tables, stored procedures, views, packages etc. in existing Oracle environment, it will give a assessment if the existing Oracle Database is very complex. 
 
 The assessment principles as below table:
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/AssessmentTable.png" />&nbsp;
