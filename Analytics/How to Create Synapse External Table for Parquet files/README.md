@@ -2,7 +2,9 @@
 
 ## Requirements
 Create Azure Data Lake Storage Gen 2
+
 Create Azure Synapse database
+
 Upload sample Parquet file to Azure Data Lake Storage Gen 2
 
 ## Setup 
