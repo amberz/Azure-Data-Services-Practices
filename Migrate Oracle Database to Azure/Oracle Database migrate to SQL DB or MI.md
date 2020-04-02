@@ -1,4 +1,4 @@
-# Oracle Database to Azure SQL Database/Managed Instance scenario
+# Oracle Database migrate to Azure SQL Database/Managed Instance scenario
 
 ## Migration Process
 
@@ -6,6 +6,12 @@ The migration will includes existing Oracla Database environment assessment, Ora
 
 Refer below migration process:
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Images/OratoSQLMigrationProcess.png" />&nbsp;
+
+##Migration tools
+Assment script:
+[Assessment Calculator Template](https://github.com/microsoft/DataMigrationTeam/blob/master/Oracle%20Inventory%20Script%20Artifacts/Oracle%20Inventory%20Script%20Artifacts/Customer%20Assessment%20CalculatorTemplate2.xlsx) and run [Oracle PL\SQL](https://github.com/microsoft/DataMigrationTeam/blob/master/Oracle%20Inventory%20Script%20Artifacts/Oracle%20Inventory%20Script%20Artifacts/Oracle_PreSSMA_Pre_v12.sql) in existing Oracle database. 
+Oracle schema and data migration:
+[Microsoft SQL Server Migration Assistant for Oracle](https://aka.ms/ssmafororacle)
 
 ## Assessment
 
