@@ -10,16 +10,21 @@ Oracle database would migrate to Azure Virtual Machine, Azure Database for Postg
 
 Oracle Database can migrate to Azure Virtual Machine, and also provide business continuity and disaster recovery capacity. 
 
-Blow is step by step guide to install Oracle DB to Azure Virtual Machine:
-How to install Oracle database on Azure Virtual Machine, see [Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
+Blow is step-by-step guide to install Oracle DB to Azure Virtual Machine:
+[Oracle VM images and their deployment on Microsoft Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-vm-solutions).
 
 
-For BCDR requirement, refer [Implement Oracle Data Guard on an Azure Linux virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard), and [Implement Oracle Golden Gate on an Azure Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate) 
+For BCDR requirement, the both Oracle Data Guard and Oracle Golden Gate can be configured on Azure as well. 
+
+For step-by-step configuration, refer 
+[Implement Oracle Data Guard on an Azure Linux virtual machine](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard), and [Implement Oracle Golden Gate on an Azure Linux VM](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate) 
 
 
 ### Refactor
 
-Migrate to Azure Database for PostgreSQL, Azure Data Migration Service can provide Oracle schemas and data migration, for more information, [Tutorial: Migrate Oracle to Azure Database for PostgreSQL online using DMS (Preview)](https://docs.microsoft.com/en-us/azure/dms/tutorial-oracle-azure-postgresql-online)
+PostgreSQL is another option to allow Oracle users easy to migrate. Firstly, Azure provide PaaS service including built-in BCDR capacibity. Secondly, Azure provide a migration service allow user to easy to migrate Oracle schema and data to Azure database for PostgreSQL.  
+
+For step-by-step migration, refer [Tutorial: Migrate Oracle to Azure Database for PostgreSQL online using DMS (Preview)](https://docs.microsoft.com/en-us/azure/dms/tutorial-oracle-azure-postgresql-online)
 
 ### Rearchitect
 
