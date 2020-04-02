@@ -1,4 +1,4 @@
-# This sample code is for how to Create  External Table on Synapse for Parquet files
+# This sample code is to demostrate how to create external table on Azure Synapse with Parquet files
 
 ## Requirements
 Create Azure Data Lake Storage Gen 2
