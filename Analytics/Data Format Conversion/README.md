@@ -27,7 +27,11 @@ In this sample, create two datasource named "ADLSGen2CSVIrisDS" and "ADLSGen2Par
 
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/IrisParquetDS.png" />&nbsp;
 
-Step 3: Create a pipeline in ADF, draw a copy activity to the pipeline, choose source to CSV datasource, and 
+Step 3: Create a pipeline in ADF, draw a copy activity to the pipeline, choose "ADLSGen2CSVIrisDS" as CSV datasource, then choose "ADLSGen2ParquetIrisDS" as sink, enter desired Parquet file name. 
+
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/Pipeline.png" />&nbsp;
+
+Step 4: Run the data format conversion pipeline, and see the parquet output.
 
 In this sample, linked service is shared since the both CSV and Parquet files will store one Azure Data Lake Gen 2 account.  
 
