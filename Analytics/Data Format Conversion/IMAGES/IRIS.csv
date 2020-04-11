@@ -1,0 +1,151 @@
+plant_number,sepal_length,sepal_width,petal_length,petal_width,species
+plant_1,5.1,3.5,1.4,0.2,Iris-setosa
+plant_2,4.9,3,1.4,0.2,Iris-setosa
+plant_3,4.7,3.2,1.3,0.2,Iris-setosa
+plant_4,4.6,3.1,1.5,0.2,Iris-setosa
+plant_5,5,3.6,1.4,0.2,Iris-setosa
+plant_6,5.4,3.9,1.7,0.4,Iris-setosa
+plant_7,4.6,3.4,1.4,0.3,Iris-setosa
+plant_8,5,3.4,1.5,0.2,Iris-setosa
+plant_9,4.4,2.9,1.4,0.2,Iris-setosa
+plant_10,4.9,3.1,1.5,0.1,Iris-setosa
+plant_11,5.4,3.7,1.5,0.2,Iris-setosa
+plant_12,4.8,3.4,1.6,0.2,Iris-setosa
+plant_13,4.8,3,1.4,0.1,Iris-setosa
+plant_14,4.3,3,1.1,0.1,Iris-setosa
+plant_15,5.8,4,1.2,0.2,Iris-setosa
+plant_16,5.7,4.4,1.5,0.4,Iris-setosa
+plant_17,5.4,3.9,1.3,0.4,Iris-setosa
+plant_18,5.1,3.5,1.4,0.3,Iris-setosa
+plant_19,5.7,3.8,1.7,0.3,Iris-setosa
+plant_20,5.1,3.8,1.5,0.3,Iris-setosa
+plant_21,5.4,3.4,1.7,0.2,Iris-setosa
+plant_22,5.1,3.7,1.5,0.4,Iris-setosa
+plant_23,4.6,3.6,1,0.2,Iris-setosa
+plant_24,5.1,3.3,1.7,0.5,Iris-setosa
+plant_25,4.8,3.4,1.9,0.2,Iris-setosa
+plant_26,5,3,1.6,0.2,Iris-setosa
+plant_27,5,3.4,1.6,0.4,Iris-setosa
+plant_28,5.2,3.5,1.5,0.2,Iris-setosa
+plant_29,5.2,3.4,1.4,0.2,Iris-setosa
+plant_30,4.7,3.2,1.6,0.2,Iris-setosa
+plant_31,4.8,3.1,1.6,0.2,Iris-setosa
+plant_32,5.4,3.4,1.5,0.4,Iris-setosa
+plant_33,5.2,4.1,1.5,0.1,Iris-setosa
+plant_34,5.5,4.2,1.4,0.2,Iris-setosa
+plant_35,4.9,3.1,1.5,0.1,Iris-setosa
+plant_36,5,3.2,1.2,0.2,Iris-setosa
+plant_37,5.5,3.5,1.3,0.2,Iris-setosa
+plant_38,4.9,3.1,1.5,0.1,Iris-setosa
+plant_39,4.4,3,1.3,0.2,Iris-setosa
+plant_40,5.1,3.4,1.5,0.2,Iris-setosa
+plant_41,5,3.5,1.3,0.3,Iris-setosa
+plant_42,4.5,2.3,1.3,0.3,Iris-setosa
+plant_43,4.4,3.2,1.3,0.2,Iris-setosa
+plant_44,5,3.5,1.6,0.6,Iris-setosa
+plant_45,5.1,3.8,1.9,0.4,Iris-setosa
+plant_46,4.8,3,1.4,0.3,Iris-setosa
+plant_47,5.1,3.8,1.6,0.2,Iris-setosa
+plant_48,4.6,3.2,1.4,0.2,Iris-setosa
+plant_49,5.3,3.7,1.5,0.2,Iris-setosa
+plant_50,5,3.3,1.4,0.2,Iris-setosa
+plant_51,7,3.2,4.7,1.4,Iris-versicolor
+plant_52,6.4,3.2,4.5,1.5,Iris-versicolor
+plant_53,6.9,3.1,4.9,1.5,Iris-versicolor
+plant_54,5.5,2.3,4,1.3,Iris-versicolor
+plant_55,6.5,2.8,4.6,1.5,Iris-versicolor
+plant_56,5.7,2.8,4.5,1.3,Iris-versicolor
+plant_57,6.3,3.3,4.7,1.6,Iris-versicolor
+plant_58,4.9,2.4,3.3,1,Iris-versicolor
+plant_59,6.6,2.9,4.6,1.3,Iris-versicolor
+plant_60,5.2,2.7,3.9,1.4,Iris-versicolor
+plant_61,5,2,3.5,1,Iris-versicolor
+plant_62,5.9,3,4.2,1.5,Iris-versicolor
+plant_63,6,2.2,4,1,Iris-versicolor
+plant_64,6.1,2.9,4.7,1.4,Iris-versicolor
+plant_65,5.6,2.9,3.6,1.3,Iris-versicolor
+plant_66,6.7,3.1,4.4,1.4,Iris-versicolor
+plant_67,5.6,3,4.5,1.5,Iris-versicolor
+plant_68,5.8,2.7,4.1,1,Iris-versicolor
+plant_69,6.2,2.2,4.5,1.5,Iris-versicolor
+plant_70,5.6,2.5,3.9,1.1,Iris-versicolor
+plant_71,5.9,3.2,4.8,1.8,Iris-versicolor
+plant_72,6.1,2.8,4,1.3,Iris-versicolor
+plant_73,6.3,2.5,4.9,1.5,Iris-versicolor
+plant_74,6.1,2.8,4.7,1.2,Iris-versicolor
+plant_75,6.4,2.9,4.3,1.3,Iris-versicolor
+plant_76,6.6,3,4.4,1.4,Iris-versicolor
+plant_77,6.8,2.8,4.8,1.4,Iris-versicolor
+plant_78,6.7,3,5,1.7,Iris-versicolor
+plant_79,6,2.9,4.5,1.5,Iris-versicolor
+plant_80,5.7,2.6,3.5,1,Iris-versicolor
+plant_81,5.5,2.4,3.8,1.1,Iris-versicolor
+plant_82,5.5,2.4,3.7,1,Iris-versicolor
+plant_83,5.8,2.7,3.9,1.2,Iris-versicolor
+plant_84,6,2.7,5.1,1.6,Iris-versicolor
+plant_85,5.4,3,4.5,1.5,Iris-versicolor
+plant_86,6,3.4,4.5,1.6,Iris-versicolor
+plant_87,6.7,3.1,4.7,1.5,Iris-versicolor
+plant_88,6.3,2.3,4.4,1.3,Iris-versicolor
+plant_89,5.6,3,4.1,1.3,Iris-versicolor
+plant_90,5.5,2.5,4,1.3,Iris-versicolor
+plant_91,5.5,2.6,4.4,1.2,Iris-versicolor
+plant_92,6.1,3,4.6,1.4,Iris-versicolor
+plant_93,5.8,2.6,4,1.2,Iris-versicolor
+plant_94,5,2.3,3.3,1,Iris-versicolor
+plant_95,5.6,2.7,4.2,1.3,Iris-versicolor
+plant_96,5.7,3,4.2,1.2,Iris-versicolor
+plant_97,5.7,2.9,4.2,1.3,Iris-versicolor
+plant_98,6.2,2.9,4.3,1.3,Iris-versicolor
+plant_99,5.1,2.5,3,1.1,Iris-versicolor
+plant_100,5.7,2.8,4.1,1.3,Iris-versicolor
+plant_101,6.3,3.3,6,2.5,"	Iris-virginica"
+plant_102,5.8,2.7,5.1,1.9,"	Iris-virginica"
+plant_103,7.1,3,5.9,2.1,"	Iris-virginica"
+plant_104,6.3,2.9,5.6,1.8,"	Iris-virginica"
+plant_105,6.5,3,5.8,2.2,"	Iris-virginica"
+plant_106,7.6,3,6.6,2.1,"	Iris-virginica"
+plant_107,4.9,2.5,4.5,1.7,"	Iris-virginica"
+plant_108,7.3,2.9,6.3,1.8,"	Iris-virginica"
+plant_109,6.7,2.5,5.8,1.8,"	Iris-virginica"
+plant_110,7.2,3.6,6.1,2.5,"	Iris-virginica"
+plant_111,6.5,3.2,5.1,2,"	Iris-virginica"
+plant_112,6.4,2.7,5.3,1.9,"	Iris-virginica"
+plant_113,6.8,3,5.5,2.1,"	Iris-virginica"
+plant_114,5.7,2.5,5,2,"	Iris-virginica"
+plant_115,5.8,2.8,5.1,2.4,"	Iris-virginica"
+plant_116,6.4,3.2,5.3,2.3,"	Iris-virginica"
+plant_117,6.5,3,5.5,1.8,"	Iris-virginica"
+plant_118,7.7,3.8,6.7,2.2,"	Iris-virginica"
+plant_119,7.7,2.6,6.9,2.3,"	Iris-virginica"
+plant_120,6,2.2,5,1.5,"	Iris-virginica"
+plant_121,6.9,3.2,5.7,2.3,"	Iris-virginica"
+plant_122,5.6,2.8,4.9,2,"	Iris-virginica"
+plant_123,7.7,2.8,6.7,2,"	Iris-virginica"
+plant_124,6.3,2.7,4.9,1.8,"	Iris-virginica"
+plant_125,6.7,3.3,5.7,2.1,"	Iris-virginica"
+plant_126,7.2,3.2,6,1.8,"	Iris-virginica"
+plant_127,6.2,2.8,4.8,1.8,"	Iris-virginica"
+plant_128,6.1,3,4.9,1.8,"	Iris-virginica"
+plant_129,6.4,2.8,5.6,2.1,"	Iris-virginica"
+plant_130,7.2,3,5.8,1.6,"	Iris-virginica"
+plant_131,7.4,2.8,6.1,1.9,"	Iris-virginica"
+plant_132,7.9,3.8,6.4,2,"	Iris-virginica"
+plant_133,6.4,2.8,5.6,2.2,"	Iris-virginica"
+plant_134,6.3,2.8,5.1,1.5,"	Iris-virginica"
+plant_135,6.1,2.6,5.6,1.4,"	Iris-virginica"
+plant_136,7.7,3,6.1,2.3,"	Iris-virginica"
+plant_137,6.3,3.4,5.6,2.4,"	Iris-virginica"
+plant_138,6.4,3.1,5.5,1.8,"	Iris-virginica"
+plant_139,6,3,4.8,1.8,"	Iris-virginica"
+plant_140,6.9,3.1,5.4,2.1,"	Iris-virginica"
+plant_141,6.7,3.1,5.6,2.4,"	Iris-virginica"
+plant_142,6.9,3.1,5.1,2.3,"	Iris-virginica"
+plant_143,5.8,2.7,5.1,1.9,"	Iris-virginica"
+plant_144,6.8,3.2,5.9,2.3,"	Iris-virginica"
+plant_145,6.7,3.3,5.7,2.5,"	Iris-virginica"
+plant_146,6.7,3,5.2,2.3,"	Iris-virginica"
+plant_147,6.3,2.5,5,1.9,"	Iris-virginica"
+plant_148,6.5,3,5.2,2,"	Iris-virginica"
+plant_149,6.2,3.4,5.4,2.3,"	Iris-virginica"
+plant_150,5.9,3,5.1,1.8,"	Iris-virginica"
