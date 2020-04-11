@@ -33,11 +33,11 @@ Step 3: Create a pipeline in ADF, draw a copy activity to the pipeline, choose "
 
 Step 4: Run the data format conversion pipeline, and see the parquet output.
 
-In this sample, linked service is shared since the both CSV and Parquet files will store one Azure Data Lake Gen 2 account.  
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/GeneratedParquetFile.png" />&nbsp;
 
-Create Azure Synapse database
+A 5 dollers bonus, no need other tools to read parquet, just open ADF "ADLSGen2ParquetIrisDS" datasource, you would preview the generated parquet file. Enjoy! 
 
-Upload sample Parquet file to Azure Data Lake Storage Gen 2
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/PreviewParquet.png" />&nbsp;
 
 
 
