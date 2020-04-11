@@ -3,6 +3,8 @@
 ## Background
 Normally Analytics proejct need to convert data format, such as: CSV files convert to Parquet since Parquet Apache Parquet is designed for columnar storage, which is more efficiency to compare with CSV files during to query data.  
 
+
+
 ## Requirement
 
 Create Azure Data Lake Storage Gen 2
@@ -12,6 +14,8 @@ Create Azure Data Factory
 Upload sample CSV file to Azure Data Lake Storage Gen 2
 
 ## Sample for CSV convert to Parquet
+
+Azure Data Factory support 6 data formats (Avro format, Binary format, Delimited text format, JSON format, ORC format, Parquet format). For flat files, it's easy to use ADF to convert them. 
 
 Let’s use this article as a simple to introduce how to use Azure Data Factory convert CSV file to Parquet. 
 
@@ -35,7 +39,7 @@ Step 4: Run the data format conversion pipeline, and see the parquet output.
 
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/GeneratedParquetFile.png" />&nbsp;
 
-A 5 dollers bonus, no need other tools to read parquet, just open ADF "ADLSGen2ParquetIrisDS" datasource, you would preview the generated parquet file. Enjoy! 
+5 dollers bonus, no need other tools to read parquet, just open ADF "ADLSGen2ParquetIrisDS" datasource, you would preview the generated parquet file. Enjoy! 
 
 <IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Analytics/Data%20Format%20Conversion/IMAGES/PreviewParquet.png" />&nbsp;
 
