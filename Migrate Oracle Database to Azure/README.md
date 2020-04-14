@@ -1,6 +1,6 @@
 # Oracle Database migrate to Azure
 
-This guidace give you reference for decision tree of Oracle database migration, migration path to virtual machine, or Azure managed database, such as: PostgreSQL, SQL Database, Managed Instance etc.
+This guidance give you reference for decision tree of Oracle database migration, migration path to virtual machine, or Azure managed database, such as: PostgreSQL, SQL Database, Managed Instance etc.
 
 ## Migration paths
 
