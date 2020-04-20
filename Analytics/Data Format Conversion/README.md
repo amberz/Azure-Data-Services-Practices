@@ -3,7 +3,7 @@
 ## Background
 Normally Analytics proejct need to convert data format, such as: CSV files convert to Parquet since Parquet Apache Parquet is designed for columnar storage, which is more efficiency to compare with CSV files during to query data.  
 
-### More about Delimited text format
+### More about delimited text format
 From [Wikipedia](https://en.wikipedia.org/wiki/Delimiter-separated_values), formats that use delimiter-separated values (also DSV):store two-dimensional arrays of data by separating the values in each row with specific delimiter characters. 
 
 Any character may be used to separate the values, but the most common delimiters are the comma, tab, and colon. So in a comma-separated values (CSV) file the data items are separated using commas as a delimiter, while in a tab-separated values (TSV) file, the data items are separated using tabs as a delimiter. 
