@@ -5,7 +5,7 @@ CREATE MASTER KEY
 -- Create Azure storage credential
 CREATE DATABASE SCOPED CREDENTIAL ADLSGen2Cred
 WITH IDENTITY = 'myadlsgen20306', 
-Secret = 'aJ2O0eifAEP8HaYDVCYQjFPO8xy8A/y8VVknH7F5F8b44DHAIR3Au8R0UXaNh6RXVWaTTT1Ju445ZDY74bLf2g==';
+Secret = '*****************';
 GO
 
 -- Query storage crediential
