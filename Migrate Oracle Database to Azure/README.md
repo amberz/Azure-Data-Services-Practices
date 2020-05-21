@@ -6,7 +6,7 @@ This guidance give you reference for decision tree of Oracle database migration,
 
 Oracle database would migrate to Azure Virtual Machine, Azure Database for PostgreSQL, Azure SQL Database, Azure Managed Instance, or leverage IntercCross-cloud connectivity( Interconnect) to access OCI.
 
-### Rehost
+### Lift/shift to Azure VMs
 
 Oracle Database can migrate to Azure Virtual Machine, and also provide business continuity and disaster recovery capacity. 
 
