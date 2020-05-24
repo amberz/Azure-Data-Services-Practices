@@ -4,6 +4,7 @@ This guidance give you reference for decision tree of Oracle database migration,
 
 
 Whether Oracle database is certified and supported on Microsoft Azure?
+
 Oracle and Microsoft published [Oracle database is certified and supported on Microsoft Azure](https://www.oracle.com/cloud/azure-interconnect-faq.html)
 
 
@@ -11,7 +12,7 @@ Oracle and Microsoft published [Oracle database is certified and supported on Mi
 
 Since application restriction(i.e. applicaiton only support Oracle database) or technologies preference, there are some otpions for Oracle database migrate to Azure, refer below migration decision tree:
 
-<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/OracleMigrationDecisionTree.jpg" />&nbsp;
+<IMG SRC="https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Images/OracleMigrationDecisionTree.png" />&nbsp;
 
 ## Migration paths
 
@@ -33,7 +34,7 @@ To install Oracle DB to Azure Virtual Machine, refer [Oracle VM images and their
 For Oracle database backup stragety, besices Oracle Recovery Manager (RMAN) to back up the database with full backup, differential back, Azure backup provide VM snapshot as VM backup. Rfer [Backup strategy for Oracle database](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-backup-recovery)
 
 
-#### business continuity and disaster recovery
+#### Business continuity and disaster recovery
 For business continuity and disaster recovery capacity, allow to deploy Oracle Data Guard with Fast-Start Failover (FSFO) for database availability, Oracle Data Guard Far Sync for zero data loss protection, Golden gate for multi-master or active-active mode on Azure availability set or availability zone depends on SLA requirements. Refer below docs about:
 [How to install and deploy data guard on Azure virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-dataguard)
 [How to install and deploy golden gate on Azure virtul machines](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-oracle-golden-gate)
