@@ -23,7 +23,7 @@ Oracle database would migrate to Azure Virtual Machine, Azure Database for Postg
 
 Azure provides Oracle database images with Bring-Your-Own-License, allows to migrate Oracle Database to Azure Virtual Machines.
 
-
+#### License
 When using Hyper-Threading Technology enabled Azure virtual Machines, Oracle database count two vCPUs as equivalent to one Oracle Processor license. Refer [Licensing Oracle Software in the Cloud Computing Environment](http://www.oracle.com/us/corporate/pricing/cloud-licensing-070579.pdf) for details. 
 
 
@@ -47,6 +47,8 @@ For Oracle RAC in Azure with FlashGrid SkyCluster, refer [Oracle RAC in Azure wi
 
 
 ### Refactor
+
+If prefer managed service on Azure and 
 
 PostgreSQL is another option to allow Oracle users easy to migrate. Firstly, Azure provide PaaS service including built-in BCDR capacibity. Secondly, Azure provide a migration service allow user to easy to migrate Oracle schema and data to Azure database for PostgreSQL.  
 
