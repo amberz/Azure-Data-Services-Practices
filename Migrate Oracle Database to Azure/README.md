@@ -76,7 +76,7 @@ If comfortable to manage MSSQL, Azure managed instance(MI) is a good options giv
 To download the SSMA for Oracle,refer to downlad the latest version [Microsoft SQL Server Migration Assistant for Oracle](https://aka.ms/ssmafororacle)
 
 #### Migration guidance 
-For whole project migration, refer [Oracle Database migrate to Azure SQL Database/Managed Instance](https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Oracle%20Database%20migrate%20to%20SQL%20DB%20or%20MI.md)
+For whole project migration, refer [Oracle Database migrate to Azure Managed Instance](https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Oracle%20Database%20migrate%20to%20SQL%20DB%20or%20MI.md)
 
 
 
