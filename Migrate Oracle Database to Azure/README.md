@@ -3,11 +3,6 @@
 This guidance give you reference for decision tree of Oracle database migration, migration path to virtual machine, or Azure managed database, such as: PostgreSQL, SQL Database, Managed Instance etc.
 
 
-Whether Oracle database is certified and supported on Microsoft Azure?
-
-Oracle and Microsoft published [Oracle database is certified and supported on Microsoft Azure](https://www.oracle.com/cloud/azure-interconnect-faq.html)
-
-
 ## Migration Decision Tree
 
 Since application restriction(i.e. applicaiton only support Oracle database) or technologies preference, there are some otpions for Oracle database migrate to Azure, refer below migration decision tree:
@@ -22,6 +17,10 @@ Oracle database would migrate to Azure Virtual Machine, Azure Database for Postg
 
 
 Azure provides Oracle database images with Bring-Your-Own-License, allows to migrate Oracle Database to Azure Virtual Machines.
+
+Whether Oracle database is certified and supported on Microsoft Azure?
+
+Oracle and Microsoft published [Oracle database is certified and supported on Microsoft Azure](https://www.oracle.com/cloud/azure-interconnect-faq.html)
 
 #### License
 When using Hyper-Threading Technology enabled Azure virtual Machines, Oracle database count two vCPUs as equivalent to one Oracle Processor license. Refer [Licensing Oracle Software in the Cloud Computing Environment](http://www.oracle.com/us/corporate/pricing/cloud-licensing-070579.pdf) for details. 
