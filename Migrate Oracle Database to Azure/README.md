@@ -48,24 +48,47 @@ For Oracle RAC in Azure with FlashGrid SkyCluster, refer [Oracle RAC in Azure wi
 
 ### Refactor
 
-If prefer managed service on Azure and 
+If prefer managed service on Azure, Azure offer Azure database migration service to allow Oracle database easyly migrate Azure database for PostgreSQL. 
 
-PostgreSQL is another option to allow Oracle users easy to migrate. Firstly, Azure provide PaaS service including built-in BCDR capacibity. Secondly, Azure provide a migration service allow user to easy to migrate Oracle schema and data to Azure database for PostgreSQL.  
+#### Prerequisites
+* Azure Subscritpion, refer [How to create Azure subscription](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription) to create a new subscritpion if doesn't exist. 
+* Provision Azure Data Migration Service(DMS), refer [Create DMS using Azure portal](https://docs.microsoft.com/en-us/azure/dms/quickstart-create-data-migration-service-portal) about how to create DMS.
 
-For step-by-step migration, refer [Tutorial: Migrate Oracle to Azure Database for PostgreSQL online using DMS (Preview)](https://docs.microsoft.com/en-us/azure/dms/tutorial-oracle-azure-postgresql-online)
+#### Why migrate to PostgreSQL
+* Azure database for PostgreSQL provide built-in business continuity and disaster recovery capacibity. Refer [PostgreSQL read replica](https://docs.microsoft.com/en-us/azure/postgresql/concepts-read-replicas)
+
+* Azure provide Azure Data Migration Service allow easily to convert Oracle objects and migrate online data to Azure database for PostgreSQL.  
+
+
+#### Migration guidance 
+For step-by-step migration, refer [Migrate Oracle database to Azure Database for PostgreSQL](https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Oracle%20Database%20migrate%20to%20ProstgreSQL.md)
+
 
 ### Rearchitect
 
-Azure SQL Database/Managed Instance provide powerful BCDR, security and stability. To migrate to Azure SQL Database or Azure Managed Instance, SQL Server Migration Assistant for Oracle can provide Oracle schema and objects conversion and data migration to Azure SQL Database/Managed Instance. 
+If comfortable to manage MSSQL, Azure managed instance(MI) is a good options given it's Microsoft 1st party relational database on Azure. 
+
+#### Why migrate to Azure MI
+* Azure Managed Instance provide built-in [business continuity and disaster recovery capability](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-business-continuity), [Enterprise security](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview) and stability. 
+
+* Microsoft provide SQL Server Migration Assistant allow Oracle database convert objects and migrate data to MI for free.
 
 To download the SSMA for Oracle,refer to downlad the latest version [Microsoft SQL Server Migration Assistant for Oracle](https://aka.ms/ssmafororacle)
 
+#### Migration guidance 
 For whole project migration, refer [Oracle Database migrate to Azure SQL Database/Managed Instance](https://github.com/amberz/Azure-Data-Services-Practices/blob/master/Migrate%20Oracle%20Database%20to%20Azure/Oracle%20Database%20migrate%20to%20SQL%20DB%20or%20MI.md)
+
+
 
 ### Cross-cloud connectivity
 
-Using cross-cloud connectivity (Interconnect), the applications hosted on Azure can access Oracle database on Oracle Cloud Infrastructure (OCI) with low latency, high throughput by connecting an ExpressRoute circuit in Microsoft Azure with a FastConnect circuit in OCI. 
+To support multi-cloud experience, Microsoft and Oracle provide direct interconnection between Azure and Oracle Cloud Infrastructure (OCI) through ExpressRoute and FastConnect.It allows applications hosted on Azure and Oracle database hosted on Oracle Cloud Infrastructure (OCI) with low latency, high throughput by connecting an ExpressRoute circuit in Microsoft Azure with a FastConnect circuit in OCI. 
 
+#### Certify applications
+
+[Oracle will certify applications to run in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking)
+
+#### How to configure
 For more information about how to configure cross-cloud connectivity from Azure to OCI, see [Set up a direct interconnection between Azure and Oracle Cloud Infrastructure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking).
 
 
