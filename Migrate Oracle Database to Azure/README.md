@@ -18,8 +18,8 @@ Oracle database would migrate to Azure Virtual Machine, Azure Database for Postg
 
 Azure provides Oracle database images with Bring-Your-Own-License, allows to migrate Oracle Database to Azure Virtual Machines.
 
-Whether Oracle database is certified and supported on Microsoft Azure?
 
+Whether Oracle database is certified and supported on Microsoft Azure?
 Oracle and Microsoft published [Oracle database is certified and supported on Microsoft Azure](https://www.oracle.com/cloud/azure-interconnect-faq.html)
 
 #### License
