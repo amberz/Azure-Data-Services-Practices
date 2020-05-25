@@ -69,9 +69,10 @@ For step-by-step migration, refer [Migrate Oracle database to Azure Database for
 If comfortable to manage MSSQL, Azure managed instance(MI) is a good options given it's Microsoft 1st party relational database on Azure. 
 
 #### Why migrate to Azure MI
-* Azure Managed Instance provide built-in [business continuity and disaster recovery capability](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-business-continuity), [Enterprise security](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview) and stability. 
-
+* Azure Managed Instance provide built-in [business continuity and disaster recovery capability](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-business-continuity)
+* Azure Managed Instance offer [Enterprise security](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-overview) and stability. 
 * Microsoft provide SQL Server Migration Assistant allow Oracle database convert objects and migrate data to MI for free.
+
 
 To download the SSMA for Oracle,refer to downlad the latest version [Microsoft SQL Server Migration Assistant for Oracle](https://aka.ms/ssmafororacle)
 
@@ -86,7 +87,7 @@ To support multi-cloud experience, Microsoft and Oracle provide direct interconn
 
 #### Certify applications
 
-Refer [Those certified applications by Oracle](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking) to run in Azure.
+Refer [those certified applications by Oracle](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking) to run in Azure.
 
 #### How to configure cross-cloud connectivity
 For more information about how to configure cross-cloud connectivity from Azure to OCI, see [Set up a direct interconnection between Azure and Oracle Cloud Infrastructure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking).
