@@ -86,9 +86,9 @@ To support multi-cloud experience, Microsoft and Oracle provide direct interconn
 
 #### Certify applications
 
-[Oracle will certify applications to run in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking)
+Refer [Those certified applications by Oracle](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking) to run in Azure.
 
-#### How to configure
+#### How to configure cross-cloud connectivity
 For more information about how to configure cross-cloud connectivity from Azure to OCI, see [Set up a direct interconnection between Azure and Oracle Cloud Infrastructure](https://docs.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/configure-azure-oci-networking).
 
 
