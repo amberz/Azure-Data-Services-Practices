@@ -1,4 +1,4 @@
-# Oracle Database migrate to Azure SQL Database/Managed Instance scenario
+# Oracle Database migrate to Azure Managed Instance scenario
 
 ## Migration Process
 
@@ -36,7 +36,7 @@ For more information, see [Schema conversion](https://docs.microsoft.com/en-us/s
 
 
 ## Oracle Objects conversion and Data migration
-After installed SSMA, create report to convert Oracle Schema and migrate data to SQL Database or Managed Instance
+After installed SSMA, create report to convert Oracle Schema and migrate data to Managed Instance
 For step-by-step guide, see [SSMA Migration guide](https://docs.microsoft.com/en-us/sql/ssma/oracle/sql-server-linux-convert-from-oracle?view=sql-server-ver15)
 
 
