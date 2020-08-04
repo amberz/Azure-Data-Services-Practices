@@ -17,4 +17,5 @@ MySQL_PreDiscovery Script can run on MySQL Database to evaluate how many tables,
 
 
 ## Objects conversion and Data migration
+After discovery and assessment, create MySQL schema on Azure database for MySQL.
 
