@@ -2,6 +2,7 @@
 
 This guidance give you reference for decision tree of Oracle database migration, migration path to virtual machine, or Azure managed database, such as: PostgreSQL, SQL Database, Managed Instance etc.
 
+You also would refer Azure Architecture Center [Oracle Migration Guide](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/oracle-migrate/oracle-migration-overview) with same content and published in two different repo. 
 
 ## Migration Decision Tree
 
