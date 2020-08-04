@@ -2,6 +2,22 @@
 
 This guide provide practices how to migrate MySQL to Azure
 
+
+## Migration Decision Tree
+
+If MySQL engine is InnoDB or Memory, use Azure Database for MySQL 
+Supported
+•	InnoDB
+•	MEMORY
+
+If need to use MyISAM, BLACKHOLE, ARCHIVE AND FEDERATED engine, consider to use Azure Virtual Machine hosting MySQL server. 
+•	MyISAM
+•	BLACKHOLE
+•	ARCHIVE
+•	FEDERATED
+
+
+
 ## Migration tools
 
 MySQL discover script:
