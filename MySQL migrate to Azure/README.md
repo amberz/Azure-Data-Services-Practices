@@ -35,3 +35,8 @@ MySQL_PreDiscovery Script can run on MySQL Database to evaluate how many tables,
 ## Objects conversion and Data migration
 After discovery and assessment, create MySQL schema on Azure database for MySQL.
 
+## Architecture for Azure database for MySQL
+
+Load balance read replicas using ProxySQL in Azure Database for MySQL
+
+https://techcommunity.microsoft.com/t5/azure-database-for-mysql/load-balance-read-replicas-using-proxysql-in-azure-database-for/ba-p/880042
