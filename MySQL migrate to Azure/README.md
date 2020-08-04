@@ -13,7 +13,7 @@ Data migration:
 
 ## Discovery existing MySQL environment
 
-MySQL_PreDiscovery Script can run on Oracle Database to evaluate how many tables, stored procedures, views etc. in existing MySQL environment, it will give a assessment if the existing Oracle Database is very complex. 
+MySQL_PreDiscovery Script can run on Oracle Database to evaluate how many tables, stored procedures, views etc. in existing MySQL environment, it will give a assessment if the existing Database is very complex. 
 
 
 ## Objects conversion and Data migration
