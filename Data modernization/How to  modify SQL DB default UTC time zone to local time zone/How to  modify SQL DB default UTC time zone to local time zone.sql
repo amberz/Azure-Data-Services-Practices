@@ -32,5 +32,6 @@ insert into tbltest values (2,'SQL Database', dbo.dReturnDate(getdate()))
 -- query the latest row time is PST now.
 select * from tbltest
 
-
+--MS blogs 
+--https://techcommunity.microsoft.com/t5/azure-database-support-blog/lesson-learned-4-modifying-the-default-time-zone-for-your-local/ba-p/368798
 
