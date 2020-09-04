@@ -14,6 +14,8 @@ INSERT INTO [dbo].[OrderInformation] ([OrderID], [CustomerID]) VALUES (857, 2)
 INSERT INTO [dbo].[OrderInformation] ([OrderID], [CustomerID]) VALUES (321, 1)
 INSERT INTO [dbo].[OrderInformation] ([OrderID], [CustomerID]) VALUES (564, 8)
 
+select * from [OrderInformation]
+
 --create 2nd database on Azure SQL DB
 create database Customers
 
@@ -27,6 +29,9 @@ CREATE TABLE [dbo].[CustomerInformation](
 INSERT INTO [dbo].[CustomerInformation] ([CustomerID], [CustomerName], [Company]) VALUES (1, 'Jack', 'ABC')
 INSERT INTO [dbo].[CustomerInformation] ([CustomerID], [CustomerName], [Company]) VALUES (2, 'Steve', 'XYZ')
 INSERT INTO [dbo].[CustomerInformation] ([CustomerID], [CustomerName], [Company]) VALUES (3, 'Lylla', 'MNO')
+
+select * from [CustomerInformation]
+
 
 --NOTE CONNECT TO ORDERS database on on-prem
 
