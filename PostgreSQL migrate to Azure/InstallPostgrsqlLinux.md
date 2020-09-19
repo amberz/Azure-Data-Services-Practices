@@ -1,11 +1,11 @@
 
 # Install Postgresql on Centos
 
-## Installation 
+### Installation 
     # install postgresql server
     yum install postgresql-server
 
-## Configuration 
+### Configuration 
     # Create a non-root user and switch to this new user since for security reasons, PostgreSQL uses a non-root user to initialize, start, or shut down the database
     $ useradd postgres
     $ su - postgres
@@ -22,10 +22,11 @@
     Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /usr/lib/systemd/system/postgresql.service.
 Please refer [Postgresql on Centos](https://www.postgresql.org/download/linux/redhat/)  
 
-## Connect postgresql
+### Connect postgresql database engine, create database, table
     $ su - postgres
     get below output
     Last login: Sun Sep 13 19:29:59 UTC 2020 on pts/0
+    
     # create a database
     createdb MyPGDB913
     # connect the database
@@ -45,6 +46,21 @@ Please refer [Postgresql on Centos](https://www.postgresql.org/download/linux/re
     
 Please refer [Install PostgreSQL on Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/postgresql-install). 
 
+
+    # pd_dump database 
+    pg_dump mydb > db.sql
+    # pg_dump table
+    pg_dump -h mylocalpghostname -p 5432 -U postgres --table=MyPGTable --schema-only --format=custom postgres 
+
+    # restore a table
+    pg_restore -h azuretest.postgres.database.azure.com -p 5432 -U myuser --schema-only --dbname citus
+
+Please refer [PG_dump](https://www.postgresql.org/docs/9.3/app-pgdump.html)
+### Use PG_dump to back database
+
+    # login Postgresql database engine
+    $ su - postgres
+    # use pg_dump to backup database schema to a SQL script
 
 #  Install Postgresql engine on Ubuntu   
 
