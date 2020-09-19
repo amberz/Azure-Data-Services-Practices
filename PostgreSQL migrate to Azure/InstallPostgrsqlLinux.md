@@ -62,6 +62,34 @@ Please refer [PG_dump](https://www.postgresql.org/docs/9.3/app-pgdump.html)
     $ su - postgres
     # use pg_dump to backup database schema to a SQL script
 
+# Install and configure PostgreSQL in conda 
+    # create a temp folder to download conda 
+    cd /tmp
+    curl -O https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+    # Install Anaconda
+    bash Anaconda3-2019.03-Linux-x86_64.sh
+
+    # active installation
+    source ~/.bashrc
+    # Test conda installation 
+    conda list
+
+
+    # Create conda environment
+    conda create --name myenv
+    # update conda 
+    conda update -n base -c defaults conda
+    # enter the environment
+    conda activate myenv
+
+
+    # install postgresql via conda
+    conda install -y -c conda-forge postgresql
+    # create a base database locally
+    initdb -D mylocal_db
+    # start the server modus/instance of postgres
+    pg_ctl -D mylocal_db -l logfile start
+
 #  Install Postgresql engine on Ubuntu   
 
 ## Installation 
