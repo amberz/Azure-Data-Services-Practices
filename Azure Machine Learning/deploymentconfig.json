@@ -1,0 +1,12 @@
+{
+    "computeType": "aci",
+    "containerResourceRequirements":
+    {
+        "cpu": 0.5,
+        "memoryInGB": 1.0
+    },
+    "location": West US 2
+    "authEnabled": false,
+    "sslEnabled": false,
+    "appInsightsEnabled": false
+}
