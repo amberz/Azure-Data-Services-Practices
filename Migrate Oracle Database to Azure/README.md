@@ -45,6 +45,8 @@ Oracle Real Application Cluster (RAC) alone cannot be used in Azure, leveraging 
 
 For Oracle RAC in Azure with FlashGrid SkyCluster, refer [Oracle RAC in Azure with FlashGrid SkyCluster](https://www.flashgrid.io/oracle-rac-in-azure/) as reference architecture, [SkyCluster for Oracle RAC](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/flashgrid-inc.flashgrid-skycluster) to get Azure SkyCluster for Oracle RAC image. 
 
+Check Oracle VM OS version
+> az vm image list --offer Oracle-Linux --all  --publisher Oracle --output table
 
 ### Refactor
 
