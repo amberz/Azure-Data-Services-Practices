@@ -1,6 +1,12 @@
 ﻿# PowerShell script for creating a new SQL user called myapp using application AppSP with secret
 # https://docs.microsoft.com/en-us/azure/azure-sql/database/authentication-aad-service-principal-tutorial
 
+#preparation
+# create service pricipal amberamlprincipal from Azure portal 
+# execute below T-SQL under a AAD account
+CREATE USER amberamlprincipal FROM EXTERNAL PROVIDER
+EXEC sp_addrolemember [dbmanager], 'amberamlprincipal'
+
 $tenantId = "***"   #  tenantID (Azure Directory ID) were AppSP resides
 $clientId = "***"   #  AppID also ClientID for AppSP     
 $clientSecret = "***"   #  client secret for AppSP 
