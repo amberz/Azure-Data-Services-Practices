@@ -29,7 +29,7 @@ GROUP BY
 ORDER BY 
     TotalSpaceMB DESC, t.Name
 
--- get temp table size
+-- get temporary table size, note this need SQL DB admin permision since it will run on tempdb
 SELECT TBL.name AS ObjName 
       ,STAT.row_count AS StatRowCount 
       ,STAT.used_page_count * 8 AS UsedSizeKB 
