@@ -16,7 +16,7 @@ Azure Data Factory is a data transformation service, using it would process AML 
 
 1. Partition large data to parquet files before training model. 
 
-    A good example is when use [pandas dataframe](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html), Pandas dataframe works well for data sizes less than 1GB, but if data is large than 1GB, Pandas dataframe slow down to process data, sometime even will get out of memory error message. 
+    A good example is when use [pandas dataframe](https://pandas.pydata.org/pandas-docs/stable/getting_started/overview.html), Pandas dataframe works well for data sizes less than 1GB. However, if the data is larger than 1GB, Pandas dataframe will slow down to process data and you may encounter a run-time memory error. 
 
 
 ## Preparation
