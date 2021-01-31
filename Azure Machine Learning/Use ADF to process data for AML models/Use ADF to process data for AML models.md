@@ -24,7 +24,7 @@ In Automated machine learning(AutoML) project, it would apply below three data p
 ## Preparation
 Use a table of Azure SQL Database as raw data, then run [Insert data](./Images/MyProducts.sql) get tutorial data. 
 ```
-CREATE TABLE [dbo].[MyTransaction](
+CREATE TABLE [dbo].[MyMyProducts](
 	[ID] [int] NULL,
 	[Col1] [char](124) NULL,
 	[Col2] [char](124) NULL,
