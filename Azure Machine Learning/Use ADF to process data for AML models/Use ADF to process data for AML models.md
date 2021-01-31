@@ -22,7 +22,7 @@ In Automated machine learning(AutoML) project, it would apply below three data p
 
 
 ## Preparation
-Use a table of Azure SQL Database as raw data, then run [Insert data](./Images/MyLocation.sql) get tutorial data. 
+Use a table of Azure SQL Database as raw data, then run [Insert data](./Images/MyProducts.sql) get tutorial data. 
 ```
 CREATE TABLE [dbo].[MyTransaction](
 	[ID] [int] NULL,
