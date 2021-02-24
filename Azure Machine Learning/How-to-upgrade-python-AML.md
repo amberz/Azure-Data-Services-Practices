@@ -30,3 +30,5 @@ python -m ipykernel install --user --name python_3.9 --display-name "Python (3.9
 
 Check the new Python version in AML compute instance is 3.9
 ![compute-instance-upgraded-python-version](./media/compute-instance-upgraded-python-version.png)
+
+Refer Azure Link: (Access a compute instance terminal)[https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-terminal#install-packages]
