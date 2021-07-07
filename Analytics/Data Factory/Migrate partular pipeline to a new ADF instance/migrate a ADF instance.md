@@ -7,13 +7,14 @@
 * Connect to your Azure subscription
 ```
 Connect-AzAccount
-[Connect-AzAccount (Az.Accounts)](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-6.2.0)
 ```
+[Connect-AzAccount (Az.Accounts)](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-6.2.0)
+
 * Choose the subscription if you have multiple subscriptions
 ```
 Set-AzContext -Subscription "xxxx-xxxx-xxxx-xxxx"
-[Set-AzContext (Az.Accounts)](https://docs.microsoft.com/en-us/powershell/module/az.accounts/set-azcontext?view=azps-6.2.0)
 ```
+[Set-AzContext (Az.Accounts)](https://docs.microsoft.com/en-us/powershell/module/az.accounts/set-azcontext?view=azps-6.2.0)
 
 * Query current ADF instance
 ```
@@ -26,7 +27,7 @@ Manually create IR
 
 * Migrate linked service
 ```
-Set-AzDataFactoryV2LinkedService -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "LinkedServiceCuratedWikiData" -File "C:\\samples\\WikiSample\\LinkedServiceCuratedWikiData.json" | Format-List
+Set-AzDataFactoryV2LinkedService -ResourceGroupName "ADF" -DataFactoryName "WikiADF" -Name "LinkedServiceCuratedWikiData" -File "C:\\samples\\WikiSample\\LinkedServiceCuratedWikiData.json" 
 ```
     LinkedServiceName : LinkedServiceCuratedWikiData
     ResourceGroupName : ADF
