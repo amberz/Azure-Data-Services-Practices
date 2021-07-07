@@ -7,7 +7,7 @@
 * Connect to your Azure subscription
 ```
 Connect-AzAccount
-[Connect-AzAccount (Az.Accounts)}(https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-6.2.0)
+[Connect-AzAccount (Az.Accounts)](https://docs.microsoft.com/en-us/powershell/module/az.accounts/connect-azaccount?view=azps-6.2.0)
 ```
 * Choose the subscription if you have multiple subscriptions
 ```
