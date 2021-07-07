@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "C:\\Python27\\python.exe",
+    "files.watcherExclude": {
+        "**/target": true
+    }
+}

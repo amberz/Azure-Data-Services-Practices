@@ -1,0 +1,25 @@
+{
+    "name": "ds_csv_blob",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_myblob1120",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "dbo.SpatialTable.txt",
+                "folderPath": "copyfolder",
+                "container": "myadfdata"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
