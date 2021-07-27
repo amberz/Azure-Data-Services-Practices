@@ -1,0 +1,31 @@
+{
+	"name": "ds_SQLPool1129_partitiontbl",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Col1",
+				"type": "char"
+			},
+			{
+				"name": "Col2",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "partitiontbl"
+		},
+		"sqlPool": {
+			"referenceName": "sqlpool1129",
+			"type": "SqlPoolReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

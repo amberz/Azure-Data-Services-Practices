@@ -1,0 +1,27 @@
+{
+	"name": "ds_SQLDB_Spacetbl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SQLDB_sqlserver0114",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "New Name",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "spacetbl"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

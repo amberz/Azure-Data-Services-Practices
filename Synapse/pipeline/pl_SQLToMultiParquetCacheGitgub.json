@@ -1,0 +1,38 @@
+{
+	"name": "pl_SQLToMultiParquetCacheGitgub",
+	"properties": {
+		"description": "pipeline().parameters",
+		"activities": [
+			{
+				"name": "ds_SQLToMultiParquetCacheGitgub",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "ds_SQLToMultiParquetCacheGitgub",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"folder": {
+			"name": "ReadyPipeline"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-07T02:18:19Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

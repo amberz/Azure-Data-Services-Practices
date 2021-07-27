@@ -1,0 +1,31 @@
+{
+	"name": "ds_SQLDB_MyLocations",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SQLDB_sqlserver0114",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Col1",
+				"type": "char"
+			},
+			{
+				"name": "Col2",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MyLocations"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

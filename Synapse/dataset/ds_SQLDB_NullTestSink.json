@@ -1,0 +1,30 @@
+{
+	"name": "ds_SQLDB_NullTestSink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SQLDB_sqlserver0114",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "NULLTest"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Name",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tbldelete"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

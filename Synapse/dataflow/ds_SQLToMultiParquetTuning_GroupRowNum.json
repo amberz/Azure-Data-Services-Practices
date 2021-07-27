@@ -1,0 +1,61 @@
+{
+	"name": "ds_SQLToMultiParquetTuning_GroupRowNum",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_SQLTable_partitiontbl",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_SQLTable_partitiontbl",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [
+				{
+					"name": "CacheSink"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_blob_parquet",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_blob_parquet_2",
+						"type": "DatasetReference"
+					},
+					"name": "sink2"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DerivedCol2"
+				},
+				{
+					"name": "DerivedCol1"
+				},
+				{
+					"name": "AddRowCount"
+				},
+				{
+					"name": "DerivedCol3"
+				},
+				{
+					"name": "ConditionalSplit1"
+				}
+			],
+			"script": "source(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source1\nsource(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source2\nsource1 derive(DerivedCol12 = concat(concat(trim(Col1),trim(Col2)),'.parquet')) ~> DerivedCol2\nsource2 derive(DerivedCol12Sou2 = concat(concat(trim(Col1),trim(Col2)),'.parquet')) ~> DerivedCol1\nDerivedCol1 aggregate(groupBy(DerivedCol12Sou2),\n\tMyRowCount = count(1)) ~> AddRowCount\nDerivedCol2 derive(RowCountSou1 = CacheSink#lookup(DerivedCol12).MyRowCount) ~> DerivedCol3\nDerivedCol3 split(equals(RowCountSou1,1),\n\tdisjoint: false) ~> ConditionalSplit1@(Row1, Row2)\nAddRowCount sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tkeys:['DerivedCol12Sou2'],\n\tstore: 'cache',\n\tformat: 'inline',\n\toutput: false,\n\tsaveOrder: 1) ~> CacheSink\nConditionalSplit1@Row1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet',\n\tfilePattern:'[n].parquet',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tpartitionBy('key',\n\t\t0,\n\t\tDerivedCol12\n\t)) ~> sink1\nConditionalSplit1@Row2 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet',\n\tfilePattern:'[n].parquet',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tpartitionBy('key',\n\t\t0,\n\t\tDerivedCol12\n\t)) ~> sink2"
+		}
+	}
+}

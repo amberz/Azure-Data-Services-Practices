@@ -1,0 +1,17 @@
+{
+	"name": "SQLscript_NYCTaxiSQLPoolQuery",
+	"properties": {
+		"description": "https://docs.microsoft.com/en-us/azure/synapse-analytics/get-started-analyze-spark",
+		"content": {
+			"query": "SELECT PassengerCount,\n      SUM(TripDistanceMiles) as SumTripDistance,\n      AVG(TripDistanceMiles) as AvgTripDistance\nFROM  dbo.Trip\nWHERE TripDistanceMiles > 0 AND PassengerCount > 0\nGROUP BY PassengerCount\nORDER BY PassengerCount",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"name": "sqlpool1129",
+				"type": "SqlPool"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}

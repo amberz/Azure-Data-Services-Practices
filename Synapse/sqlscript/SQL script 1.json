@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [DepartmentID]\n,[Name]\n,[GroupName]\n,[ModifiedDate]\n,[UserID]\n FROM [dbo].[Department]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "sqlpool1129",
+				"databaseName": "sqlpool1129"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

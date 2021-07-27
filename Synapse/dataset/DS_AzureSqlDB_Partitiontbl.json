@@ -1,0 +1,31 @@
+{
+	"name": "DS_AzureSqlDB_Partitiontbl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Col1",
+				"type": "char"
+			},
+			{
+				"name": "Col2",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "partitiontbl"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,42 @@
+{
+	"name": "SourceDataset_wv5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_myblob1120",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "dbo.SpatialTable.txt",
+				"folderPath": "copyfolder",
+				"container": "myadfdata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "1",
+				"type": "String"
+			},
+			{
+				"name": "LINESTRING (-122.36 47.656",
+				"type": "String"
+			},
+			{
+				"name": " -122.343 47.656)",
+				"type": "String"
+			},
+			{
+				"name": "LINESTRING (-122.36 47.656, -122.343 47.656)",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

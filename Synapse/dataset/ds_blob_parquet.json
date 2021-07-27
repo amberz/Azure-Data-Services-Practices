@@ -1,0 +1,21 @@
+{
+	"name": "ds_blob_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_myblob1120",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "parquetfiles1",
+				"container": "myadfdata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,33 @@
+{
+	"name": "ds_blob_parquet_Souce",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_myblob1120",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "myadfdata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "INT32"
+			},
+			{
+				"name": "Col1",
+				"type": "UTF8"
+			},
+			{
+				"name": "Col2",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

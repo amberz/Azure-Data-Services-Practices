@@ -1,0 +1,31 @@
+{
+	"name": "ds_SQLDB_SpatialTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_SQLDB_sqlserver0114",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "GeogCol1",
+				"type": "AdventureWorks2017.sys.geography"
+			},
+			{
+				"name": "GeogCol2",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SpatialTable"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

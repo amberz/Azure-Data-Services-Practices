@@ -1,0 +1,42 @@
+{
+	"name": "ds_blog_parquet_ok",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_myblob1120",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": ".parquet",
+				"container": "myadfdataok"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "INT32"
+			},
+			{
+				"name": "Col1",
+				"type": "UTF8"
+			},
+			{
+				"name": "Col2",
+				"type": "UTF8"
+			},
+			{
+				"name": "DerivedCol1",
+				"type": "UTF8"
+			},
+			{
+				"name": "DerivedCol2",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

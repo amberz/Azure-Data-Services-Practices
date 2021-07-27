@@ -1,0 +1,58 @@
+{
+	"name": "ds_SQLToMultiParquet11",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_SQLTable_partitiontbl",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_SQLTable_partitiontbl",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ds_blob_parquet",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_blob_parquet_2",
+						"type": "DatasetReference"
+					},
+					"name": "sink2"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DerivedColumn1"
+				},
+				{
+					"name": "DerivedColumn2"
+				},
+				{
+					"name": "AddRowCount"
+				},
+				{
+					"name": "Join1"
+				},
+				{
+					"name": "ConditionalSplit1"
+				}
+			],
+			"script": "source(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source1\nsource(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source2\nsource1 derive(DerivedCol12 = concat(concat(trim(Col1),trim(Col2)),'.parquet')) ~> DerivedColumn1\nsource2 derive(DerivedColumn2 = concat(concat(trim(Col1),trim(Col2)),'.parquet')) ~> DerivedColumn2\nDerivedColumn2 aggregate(groupBy(DerivedColumn2),\n\tRowNum = count(1)) ~> AddRowCount\nDerivedColumn1, AddRowCount join(DerivedCol12 == DerivedColumn2,\n\tjoinType:'inner',\n\tbroadcast: 'auto')~> Join1\nJoin1 split(equals(RowNum,1),\n\tdisjoint: false) ~> ConditionalSplit1@(Row1, Row2)\nConditionalSplit1@Row1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet',\n\trowUrlColumn:'DerivedCol12',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1\nConditionalSplit1@Row2 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet',\n\trowUrlColumn:'DerivedCol12',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink2"
+		}
+	}
+}

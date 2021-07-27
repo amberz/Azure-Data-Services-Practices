@@ -1,0 +1,16 @@
+{
+	"name": "AzureSqlDatabaseSHIR",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=sqlserver0114.database.windows.net;initial catalog=AdventureWorks2017;user id=Amber",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2N2EyZjU3Ny04ZWY3LTQ0YWMtODM1ZS03MjU3ZGY5MDNjOWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SHIR1213",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

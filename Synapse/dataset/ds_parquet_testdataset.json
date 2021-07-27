@@ -1,0 +1,42 @@
+{
+	"name": "ds_parquet_testdataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob_myblob1120",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "testdataset",
+				"container": "myadfdata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "INT32"
+			},
+			{
+				"name": "Col1",
+				"type": "UTF8"
+			},
+			{
+				"name": "Col2",
+				"type": "UTF8"
+			},
+			{
+				"name": "RowCountSou1",
+				"type": "INT64"
+			},
+			{
+				"name": "DerivedCol12",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

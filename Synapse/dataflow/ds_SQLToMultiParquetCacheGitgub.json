@@ -1,0 +1,68 @@
+{
+	"name": "ds_SQLToMultiParquetCacheGitgub",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_SQLDB_MyLocations",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_SQLTable_partitiontbl",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				}
+			],
+			"sinks": [
+				{
+					"name": "CacheSink"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_parquet_unqualified",
+						"type": "DatasetReference"
+					},
+					"name": "SinkForLessThan2"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_parquet_testdataset",
+						"type": "DatasetReference"
+					},
+					"name": "TrainingDatasetSink"
+				},
+				{
+					"dataset": {
+						"referenceName": "ds_parquet_trainingdataset",
+						"type": "DatasetReference"
+					},
+					"name": "TestDatasetSink"
+				}
+			],
+			"transformations": [
+				{
+					"name": "AddRowCount"
+				},
+				{
+					"name": "AddRowCountS2"
+				},
+				{
+					"name": "RowCountGreaterOrEquelThan2"
+				},
+				{
+					"name": "AddRowNumber"
+				},
+				{
+					"name": "ConditionalSplit1"
+				}
+			],
+			"script": "source(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source1\nsource(output(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tisolationLevel: 'READ_UNCOMMITTED',\n\tformat: 'table') ~> source2\nsource1 derive(RowCount = CacheSink#lookup(Col2).MyRowCountS2) ~> AddRowCount\nsource2 aggregate(groupBy(Col2),\n\tMyRowCountS2 = count(1)) ~> AddRowCountS2\nAddRowCount split(greaterOrEqual(RowCount,2),\n\tdisjoint: false) ~> RowCountGreaterOrEquelThan2@(GreaterOrEquelThan2, LessThan2)\nRowCountGreaterOrEquelThan2@GreaterOrEquelThan2 window(over(Col2),\n\tasc(ID, true),\n\tRowNum = rowNumber()) ~> AddRowNumber\nAddRowNumber split(lesserOrEqual(RowNum,2),\n\tdisjoint: false) ~> ConditionalSplit1@(Top2ToTestDataset, TrainingDataset)\nAddRowCountS2 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tkeys:['Col2'],\n\tstore: 'cache',\n\tformat: 'inline',\n\toutput: false,\n\tsaveOrder: 1) ~> CacheSink\nRowCountGreaterOrEquelThan2@LessThan2 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string,\n\t\tRowCountSou1 as long,\n\t\tDerivedCol12 as string\n\t),\n\tformat: 'parquet',\n\tfilePattern:'[n].parquet',\n\ttruncate: true,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> SinkForLessThan2\nConditionalSplit1@TrainingDataset sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string,\n\t\tRowCountSou1 as long,\n\t\tDerivedCol12 as string\n\t),\n\tformat: 'parquet',\n\tfilePattern:'[n].parquet',\n\ttruncate: true,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tmapColumn(\n\t\tID,\n\t\tCol1,\n\t\tCol2\n\t),\n\tpartitionBy('key',\n\t\t0,\n\t\tCol2\n\t)) ~> TrainingDatasetSink\nConditionalSplit1@Top2ToTestDataset sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tinput(\n\t\tID as integer,\n\t\tCol1 as string,\n\t\tCol2 as string,\n\t\tRowCountSou1 as long,\n\t\tDerivedCol12 as string\n\t),\n\tformat: 'parquet',\n\tfilePattern:'[n].parquet',\n\ttruncate: true,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\tmapColumn(\n\t\tID,\n\t\tCol1,\n\t\tCol2\n\t),\n\tpartitionBy('key',\n\t\t0,\n\t\tCol2\n\t)) ~> TestDatasetSink"
+		}
+	}
+}

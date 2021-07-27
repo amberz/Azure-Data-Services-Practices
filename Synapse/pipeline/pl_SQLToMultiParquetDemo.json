@@ -1,0 +1,37 @@
+{
+	"name": "pl_SQLToMultiParquetDemo",
+	"properties": {
+		"activities": [
+			{
+				"name": "ds_SQLToMultiParquetTuning",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "ds_SQLToMultiParquetDemo",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"folder": {
+			"name": "ReadyPipeline"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-03-12T05:31:33Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}
