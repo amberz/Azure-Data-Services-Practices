@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "9e47ee23-3e1c-46fa-94a1-99b5bff549c4",
+		"name": "Scanner API Power BI Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5063013"
+	},
+	"item": [
+		{
+			"name": "Step 1: Post request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "*********************",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspaces\": [\r\n        \"************\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.powerbi.com/v1.0/myorg/admin/workspaces/getInfo?lineage=true&datasourceDetails=true&datasetSchema=true&datasetExpressions=true&getArtifactUsers=true",
+					"protocol": "https",
+					"host": [
+						"api",
+						"powerbi",
+						"com"
+					],
+					"path": [
+						"v1.0",
+						"myorg",
+						"admin",
+						"workspaces",
+						"getInfo"
+					],
+					"query": [
+						{
+							"key": "lineage",
+							"value": "true"
+						},
+						{
+							"key": "datasourceDetails",
+							"value": "true"
+						},
+						{
+							"key": "datasetSchema",
+							"value": "true"
+						},
+						{
+							"key": "datasetExpressions",
+							"value": "true"
+						},
+						{
+							"key": "getArtifactUsers",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 2: Get request - scanStatus",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "*************",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Location",
+						"value": "https://<mypbilocation>/v1.0/myorg/admin/workspaces/scanStatus/myrequestid",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspaces\": [\r\n        \"*************\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<mypbilocation>/v1.0/myorg/admin/workspaces/scanStatus/<myrequestid>",
+					"protocol": "https",
+					"host": [
+						"<mypbilocation>"
+					],
+					"path": [
+						"v1.0",
+						"myorg",
+						"admin",
+						"workspaces",
+						"scanStatus",
+						"<myrequestid>"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Step 3: Get request - scanResult",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "***********",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Location",
+						"value": "https://<mypbilocation>/v1.0/myorg/admin/workspaces/scanResult/<myrequestid>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"workspaces\": [\r\n        \"***********\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://<mypbilocation>/v1.0/myorg/admin/workspaces/scanResult/<myrequestid>",
+					"protocol": "https",
+					"host": [
+						"<mypbilocation>"
+					],
+					"path": [
+						"v1.0",
+						"myorg",
+						"admin",
+						"workspaces",
+						"scanResult",
+						"<myrequestid>"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "***********************",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
