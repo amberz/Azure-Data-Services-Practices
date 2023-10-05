@@ -4,6 +4,7 @@
 # install Speech SDK in console
 # pip install azure-cognitiveservices-speech
 # pip install python-dotenv on Windows or dotenv in Linux/MacOS
+# pip install python-dotenv
 # pip install azure.cognitiveservices
 
 import os
